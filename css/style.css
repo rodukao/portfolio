@@ -11,12 +11,92 @@
 /* fontes e cores padrão */
 :root{
     --font-primaria: "Open Sans", sans-serif;
+    --font-tamanho-primaria: 24px;
     --cor-primaria: black;
     --cor-cinza-escuro: #333;
     --cor-cinza-claro: #666;
+    --cor-fundo-menu: #f3f3f3;
 }
 
 body{
+    padding: 20px;
     font-family: var(--font-primaria);
+    font-size: var(--font-tamanho-primaria);
     color: var(--cor-primaria);
+}
+
+.abertura-pagina span{
+    font-weight: 900;
+}
+
+.menu{
+    width: 60px;
+    height: 60px;
+    background-color: var(--cor-fundo-menu);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargo{
+    margin: 50px 0;
+}
+
+.destaque-cargo{
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 64px;
+}
+
+.entrada-cargo{
+    color: var(--cor-cinza-claro);
+}
+
+.chamada-header span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.formacao-academica{
+    margin: 30px 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo-formacao{
+    font-weight: bold;
+}
+
+.contato-inicial button{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contato-inicial button span{
+    background-color: #c2c2c2;
+    color: var(--cor-primaria);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.social{
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
 }
