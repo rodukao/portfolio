@@ -1,0 +1,22 @@
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* resetando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fontes e cores padrão */
+:root{
+    --font-primaria: "Open Sans", sans-serif;
+    --cor-primaria: black;
+    --cor-cinza-escuro: #333;
+    --cor-cinza-claro: #666;
+}
+
+body{
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+}
