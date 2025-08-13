@@ -89,7 +89,7 @@ body{
 .contato-inicial button span{
     background-color: #c2c2c2;
     color: var(--cor-primaria);
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     margin-left: 30px;
     display: flex;
@@ -99,4 +99,30 @@ body{
     margin: 20px 0;
     display: flex;
     gap: 10px;
+}
+
+.texto-apresentacao{
+    font-size: 16px;
+    color: var(--cor-cinza-escuro);
+}
+
+.texto-apresentacao p{
+    padding: 10px 0;
+    line-height: 1.6em;
+}
+
+.habilidades{
+    padding: 10px 0;
+}
+
+.habilidades h3{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.lista-habilidades{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
 }
