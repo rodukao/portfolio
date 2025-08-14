@@ -74,7 +74,7 @@ body{
     font-weight: bold;
 }
 
-.contato-inicial button{
+.botao-contato, .botao-ver-git-hub{
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -86,7 +86,7 @@ body{
     align-items: center;
 }
 
-.contato-inicial button span{
+.botao-contato span, .botao-ver-git-hub span{
     background-color: #c2c2c2;
     color: var(--cor-primaria);
     padding: 10px 15px;
@@ -125,4 +125,59 @@ body{
     display: flex;
     gap: 10px;
     padding: 10px 0;
+}
+
+.projetos{
+    padding: 20px 0;
+}
+
+.projetos h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.projetos div{
+    padding: 10px 0;
+}
+
+.projetos img{
+    width: 100%;
+}
+
+.projetos h3{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.projetos p{
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--cor-cinza-claro);
+    line-height: 1.6em;
+}
+
+.botoes-projetos{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.botao-ver-git-hub{
+    font-size: 16px;
+}
+
+.ver-online{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #7BBE0F;
+    font-size: 16px;
+    width: 30%;
+    font-weight: bold;
 }
