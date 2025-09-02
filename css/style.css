@@ -319,6 +319,18 @@ body{
     width: 70%;
 }
 
+    .col-2 img{
+    display: none;
+    }
+
+    .col-apresentacao{
+        display: none;
+    }
+
+    .habilidades-desktop{
+        display: none;
+    }
+
 @media screen and (min-width: 768px) {
     body{
         padding: 0;
@@ -340,11 +352,73 @@ body{
         padding: 20px;
     }
 
-    .col-2{
+    .col-2 img{
         text-align: center;
+        display: block;
+    }
+
+    .col-apresentacao{
+        display: block;
     }
 
     .cargo{
     margin: 0;
-}
+    }
+
+    .texto-apresentacao{
+        background-color: #FAFAFA;
+        padding: 60px 0;
+        margin: 40px 0;
+        display: flex;
+        position: relative;
+    }
+
+    .texto-apresentacao p{
+        text-align: left;
+        width: 75%;
+    }
+
+    .col-apresentacao{
+        position: relative;
+    }
+
+    .apresentacao-criatividade, .apresentacao-responsabilidade{
+        font-size: 90px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-style: italic;
+        -webkit-text-stroke: 1px black;
+        color: rgba(0,0,0,0);
+        position: absolute;
+        right: 40px;
+    }
+
+    .apresentacao-curiosidade{
+        position: absolute;
+        font-size: 64px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-style: italic;
+        right: 40px;
+        top: 90px;
+    }
+
+    .apresentacao-responsabilidade{
+        top: 180px;
+    }
+
+    .habilidades-desktop{
+        display: block;
+        position: absolute;
+        right: 40px;
+        bottom: 0px;
+    }
+
+    .habilidades-desktop h3{
+        text-align: right;
+    }
+
+    .mobile{
+        display: none;
+    }
 }
