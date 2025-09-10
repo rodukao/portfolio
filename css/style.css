@@ -50,7 +50,7 @@ a, button{
     cursor: pointer;
     background-color: var(--cor-fundo-menu);
     padding: 5px 10px;
-    z-index: 3;
+    z-index: 5;
 }
 
 .menu-label:hover{
@@ -68,12 +68,21 @@ a, button{
 
 .menu{
     position: fixed;
-    z-index: 3;
-    top: 20px;
-    right: -10%;
+    z-index: 4;
+    top: 0;
+    right: -100%;
     font-size: 18px;
     background-color: var(--cor-fundo-menu);
     transition: right 0.3s ease-in-out;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle:checked ~ .menu{
+    right: 0;
 }
 
 .menu ul{
@@ -94,10 +103,6 @@ a, button{
 
 .menu ul li:last-child{
     padding-bottom: 10px;
-}
-
-.menu-toggle:checked ~ .menu{
-    right: 70px;
 }
 
 .menu-toggle:checked ~ .menu-label span:nth-child(1){
@@ -422,6 +427,22 @@ a, button{
         align-items: center;
     }
 
+    .menu{
+        position: fixed;
+        z-index: 3;
+        top: 20px;
+        right: -10%;
+        font-size: 18px;
+        background-color: var(--cor-fundo-menu);
+        transition: right 0.3s ease-in-out;
+        width: 150px;
+        height: auto;
+    }
+
+    .menu-toggle:checked ~ .menu{
+        right: 70px;
+    }
+
     .col-1{
         padding: 20px;
     }
@@ -555,7 +576,7 @@ a, button{
     .container-cartoes-experiencias img{
         max-width: 95%;
         position: relative;
-        z-index: 3;
+        z-index: 2;
     }
 
     .lugar-trabalho{
