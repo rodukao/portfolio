@@ -8,8 +8,17 @@
     </head>
     <body>
         <header>
-            <nav role="navigation" class="menu">
-                <img src="img/icone-menu.svg">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-label">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#apresentacao">Quem sou</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
             </nav>
             <div class="col-1">
                 <section role="abertura" class="abertura-pagina">
@@ -34,7 +43,7 @@
                     </div>
                 </section>
                 <section role="contato-inicial" class="contato-inicial">
-                    <button class="botao-contato">entre em contato <span><img src="img/seta-direita.svg"></span></button>
+                    <a href="#contato"><button class="botao-contato">entre em contato <span><img src="img/seta-direita.svg"></span></button></a>
                 </section>
                 <section role="social" class="social">
                     <a href="https://www.instagram.com/rodukao/"><img src="img/logo-instagram.svg"></a>
@@ -47,7 +56,7 @@
             </div>     
         </header>
         <main>
-            <section role="apresentacao" class="texto-apresentacao">
+            <section role="apresentacao" class="texto-apresentacao" id="apresentacao">
                 <div class="col-1 col-apresentacao">
                     <span class="apresentacao-criatividade">Criatividade</span>
                     <span class="apresentacao-curiosidade">Curiosidade</span>
@@ -92,7 +101,7 @@
                     <li><img alt="logo python" src="img/logo-python.svg"></li>
                 </ul>
             </section>
-            <section role="projetos" class="projetos">
+            <section role="projetos" class="projetos" id="projetos">
                 <h2 class="mobile">Projetos</h2>
                 <div class="projeto">
                     <div>
@@ -119,7 +128,7 @@
                     </div>
                 </div>
             </section>
-            <section role="Experiência Profissional" class="experiencia-profissional">
+            <section role="Experiência Profissional" class="experiencia-profissional" id="experiencia">
                 <h2>Experiência profissional</h2>
                 <div class="container-cartoes-experiencias">
                     <div>
@@ -148,7 +157,7 @@
                     </div>
                 </div>
             </section>
-            <section role="Contato" class="contato">
+            <section role="Contato" class="contato" id="contato">
                 <h2>Contato</h2>
                 <div class="form-container">
                     <div class="imagem-contato">
