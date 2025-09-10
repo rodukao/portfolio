@@ -427,6 +427,10 @@ a, button{
         align-items: center;
     }
 
+    .desktop{
+        display: block;
+    }
+
     .menu{
         position: fixed;
         z-index: 3;
