@@ -29,6 +29,10 @@ body{
     color: var(--cor-primaria);
 }
 
+main{
+    width: 100%;
+}
+
 a, button{
     text-decoration: none;
     cursor: pointer;
